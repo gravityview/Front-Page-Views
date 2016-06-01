@@ -35,8 +35,8 @@ add_filter( 'parse_query', 'gv_fix_frontpage_parse_query', 10, 1 );
  */
 function gv_fix_frontpage_parse_query( $query ) {
 	$qv =& $query->query_vars;
+	if ( ( $query->is_home || $query->is_page ) && 'page' === get_option('show_on_front') && $page_id = get_option('page_on_front') ) {
 
-	if ( $query->is_home && 'page' == get_option('show_on_front') && get_option('page_on_front') ) {
 		$_query = wp_parse_args($query->query);
 		// pagename can be set and empty depending on matched rewrite rules. Ignore an empty pagename.
 		if ( isset( $_query['pagename'] ) && '' == $_query['pagename'] ) {
