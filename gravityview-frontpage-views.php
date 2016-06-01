@@ -4,7 +4,7 @@ Plugin Name: GravityView - Allow Front Page Views
 Plugin URI: https://gravityview.co/
 Description: Fix a known issue on WordPress core that prevents single entries from being visible when Views are embedded on the front page of a site.
 Author: Katz Web Services, Inc.
-Version: 1.0
+Version: 1.1
 Author URI: http://www.katzwebservices.com
 
 Copyright 2014 Katz Web Services, Inc.  (email: info@katzwebservices.com)
