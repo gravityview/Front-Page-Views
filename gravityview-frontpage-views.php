@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-add_filter( 'parse_query', 'gv_fix_frontpage_parse_query', 10, 1 );
+add_filter( 'parse_query', 'gv_fix_frontpage_parse_query', 10 );
 
 /**
  * Allow GravityView entry endpoints on the front page of a site
