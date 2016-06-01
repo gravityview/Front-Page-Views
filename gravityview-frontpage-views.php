@@ -62,6 +62,11 @@ function gv_fix_frontpage_parse_query( $query ) {
 
 			$qv =& $query->query_vars;
 
+			// Prevent redirect when on the single entry endpoint
+			if( gravityview_is_single_entry() ) {
+				add_filter( 'redirect_canonical', '__return_false' );
+			}
+
 			$query->is_page = true;
 			$query->is_home = false;
 			$qv['page_id']  = $page_id;
