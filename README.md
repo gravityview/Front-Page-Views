@@ -1,3 +1,10 @@
+### No longer needed
+
+As of GravityView 1.17.3, this plugin is no longer required.
+
+--------------------
+
+
 GravityView Front Page Views
 ============================
 
